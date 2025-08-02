@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image:url("imagenes/sol.jpg");
+  min-height: 100vh;
+  height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.login-box {
+  background: rgba(221, 218, 218, 0.96);
+  border-radius: 15px;
+  padding: 40px;
+  max-width: 400px;
+  width: 90%;
+  border: 4px solid #fbfffc;
+}
+
+.login-title {
+  color: #6b9e1d;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.form-label {
+  color: #093610;
+  font-family: 'Verdana', sans-serif;
+  color: #187D10;
+  font-size: 15px;
+  font-weight: bold;
+  
+}
+
+.btn-login {
+  background-color: #ebe7e2;
+  color: #181817;
+  transition: background 0.3s;
+  font-weight: bold;
+  
+}
+
+.btn-login:hover {
+  background: linear-gradient(90deg, #f9a825, #f57c00);
+  box-shadow: 0 8px 20px rgba(27, 17, 17, 0.2);
+  color: #db2525;
+  border: 2px solid #187D10;
+  transform: scale(1.05); /* efecto de agrandar */
+}
+
+.icon-top {
+  border-radius: 70%;
+  box-shadow: 0 4px 8px rgba(228, 130, 32, 0.4);
+  width: 200px;
+  height: 200px;
+}
+
+.card-header {
+  background-color: rgba(162, 196, 14, 0.13);
+  border: 20xp;
+}

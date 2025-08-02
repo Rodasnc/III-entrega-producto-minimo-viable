@@ -1,0 +1,128 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to top right, #ff6a00, #ffb347, #f9f871, #a8e063, #56ab2f);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.pagina {
+  display: flex;
+  flex-direction: row-reverse; /* 👈 Esto invierte los lados */
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 40px;
+}
+/* Galería */
+.galeria-productos {
+  flex: 1;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+}
+
+.producto {
+  text-align: center;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.producto img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.producto p {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Formulario */
+.formulario-producto {
+  width: 350px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-producto h3 {
+  margin-bottom: 20px;
+  color: #2f855a;
+}
+
+.formulario-producto label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.formulario-producto input,
+.formulario-producto textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.formulario-producto textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.formulario-producto button {
+  width: 100%;
+  margin-top: 20px;
+  background-color: #38a169;
+  color: rgb(241, 241, 234);
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.formulario-producto button:hover {
+  background-color: #2f855a;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 10px;
+}
+
+.producto {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.producto img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.producto button {
+    font-size: 12px;
+    padding: 6px 12px;
+}
+
