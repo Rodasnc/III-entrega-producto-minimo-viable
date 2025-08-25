@@ -37,7 +37,7 @@
   <section class="hero text-center py-5 bg-light">
     <div class="container">
       <h1>Bienvenidos a Del Campo a la Mesa</h1>
-      <p>Conectando productos campesinos directamente contigo. Conoce nuestros eventos, catálogo y más.</p>
+      <p>Productos campesinos de las Manos que cultivan con Amor. Conoce nuestros eventos, catálogo y más.</p>
     </div>
   </section>
 

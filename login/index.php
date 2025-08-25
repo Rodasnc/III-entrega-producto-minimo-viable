@@ -7,6 +7,7 @@ session_start();
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" href="imagenes/favi.png" type="image/png">
   <title>Login - Del Campo</title>
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">

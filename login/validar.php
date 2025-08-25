@@ -24,9 +24,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if (password_verify($contrasena, $vendedor['contrasena'])) {
             $_SESSION['vendedor_id'] = $vendedor['id'];
             $_SESSION['correo'] = $vendedor['correo'];
+            $_SESSION['rol'] = $vendedor['rol'];
 
-            // ✅ REDIRIGIR A LA PÁGINA DE PRODUCTOS
-            header("Location: registrar_productos.php");
+            //🔹 Redirigir según el rol
+            if ($vendedor['rol'] === 'admin') {
+                header("Location: ../listar_vendedores.php");
+            } else {
+                header("Location: registrar_productos.php");
+            }
             exit;
         } else {
             echo "❌ Contraseña incorrecta.";

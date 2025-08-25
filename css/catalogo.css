@@ -1,0 +1,104 @@
+
+body {
+    background: linear-gradient(to bottom right, #d8f3dc, #ffe5b4);
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+    .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  flex-direction: row-reverse; /* ESTO mueve el logo a la derecha */
+}
+
+    /* Estilo del menú */
+    .navbar nav a {
+  background-color: #A4C639;
+  color: #4D4D4D;
+  text-decoration: none;
+  margin-left: 15px;
+  padding: 6px 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  
+}
+
+.navbar nav a:hover {
+  background-color: #ee5a05;
+  color: rgb(15, 15, 15);
+}
+
+    .navbar .logo img {
+      height: 60px;
+      margin-right: 25px;
+      filter: drop-shadow(5px 5px 5px #eb910a); /* sombra verde pistacho */
+      border-radius: 12px; /* esquinas redondeadas */
+    }
+
+    .navbar nav a {
+      color: rgb(32, 31, 31);
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    .navbar nav a:hover {
+      color: #A4C639; /* verde pistacho */
+    }
+
+    /* Botón destacado */
+    .navbar nav .btn-registro {
+      background-color: #A4C639;
+      color: #4D4D4D;
+      padding: 6px 12px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .navbar nav .btn-registro:hover {
+      background-color: #121312;
+      color: white;
+    }
+    .navbar::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(to right, #A4C639, #ffa500);
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+  h1 {
+  font-family: 'Lucida Handwriting', cursive;
+  font-size: 2.5rem;
+  font-style: italic;
+  color: #2e5e4e;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.9); /* sombra opcional */
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #117c23;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    margin-top: 5px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;      /* Puedes ajustar esta altura */
+    object-fit: cover;  /* Esto hace que la imagen no se deforme */
+    border-radius: 8px; /* Opcional, para esquinas redondeadas */
+}

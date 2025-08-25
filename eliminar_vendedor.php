@@ -1,28 +1,21 @@
 <?php
-session_start();
-
-// Verificamos si el usuario es administrador
-if (!isset($_SESSION['es_admin']) || $_SESSION['es_admin'] !== true) {
-    echo "Acceso no permitido.";
-    exit;
-}
-
 require_once 'login/includes/conexion.php';
 
-if (isset($_GET['id'])) {
-    $vendedor_id = $_GET['id'];
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    if (isset($_POST['id'])) {
+        $id = intval($_POST['id']); // Convertir a número entero
 
-    $stmt = $conn->prepare("DELETE FROM vendedores WHERE id = ?");
-    $stmt->bind_param("i", $vendedor_id);
-
-    if ($stmt->execute()) {
-        header("Location: listar_vendedores.php");
-        exit;
+        // Eliminar vendedor
+        $sql = "DELETE FROM vendedores WHERE id = $id";
+        if ($conn->query($sql) === TRUE) {
+            header("Location: listar_vendedores.php");
+            exit();
+        } else {
+            echo "❌ Error al eliminar: " . $conn->error;
+        }
     } else {
-        echo "Error al eliminar el vendedor: " . $conn->error;
+        echo "❌ ID no recibido.";
     }
-
-    $stmt->close();
 } else {
-    echo "ID del vendedor no especificado.";
+    echo "❌ Acceso no permitido.";
 }
